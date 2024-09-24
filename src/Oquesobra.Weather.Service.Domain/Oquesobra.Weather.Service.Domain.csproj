@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Remove="ValueObjects\**" />
+        <EmbeddedResource Remove="ValueObjects\**" />
+        <None Remove="ValueObjects\**" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Folder Include="Weather\Models\" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.4.1" />
+    </ItemGroup>
+</Project>

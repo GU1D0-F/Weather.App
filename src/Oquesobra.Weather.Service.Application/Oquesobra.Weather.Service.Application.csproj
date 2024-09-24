@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="Responses\" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Oquesobra.Weather.Service.Domain\Oquesobra.Weather.Service.Domain.csproj" />
+        <ProjectReference Include="..\Oquesobra.Weather.Service.Infra\Oquesobra.Weather.Service.Infra.csproj" />
+    </ItemGroup>
+
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>Oquesobra.Weather.Service.UnitTests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <PackageReference Include="Serilog" Version="4.0.0" />
+	</ItemGroup>
+	
+</Project>
